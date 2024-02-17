@@ -17,6 +17,9 @@
 			border: 1px solid #999;
 			background: #FFFFCC;
 		}
+		input::placeholder {
+			color: #A6A6A6;
+		}
 		.img-area {
 			position: absolute;
 
@@ -46,6 +49,7 @@
 				textbox.style.left = inputSettingList[i].left + "%";
 				textbox.style.width = inputSettingList[i].width + "%";
 				textbox.style.height = inputSettingList[i].height + "%";
+				textbox.placeholder=inputSettingList[i].id;
 				const parent = document.getElementById("addTextBox");
 				parent.appendChild(textbox);
 			}
