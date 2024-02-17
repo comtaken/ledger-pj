@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>top page</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<title>フォーム</title>
+</head>
+	<style>
+		main {
+			width: 100%;
+			position: absolute;
+		}
+		input {
+			position: absolute;
+			padding: 5px 10px;
+			border: 1px solid #999;
+			background: #FFFFCC;
+		}
+		.img-area {
+			position: absolute;
+
+		}
+		.img-gif {
+			border: solid 1px;
+			width: 60%;
+			margin: auto;
+			display: block;
+		}
+	</style>
+		<body>
+		<main>
+			<div class="img-area" id="addTextBox">
+				<img class="img-gif" th:src="@{/gif/page1.gif}" alt="" />
+			</div>
+		</main>
+		<script th:inline="javascript">
+		const inputSettingList = /*[[${inputSettingList}]]*/";"
+		console.log(inputSettingList[0].id);
+
+			for(i=0; i < inputSettingList.length; i++){
+				const textbox = document.createElement("input");
+				textbox.id = inputSettingList[i].id;
+				textbox.type = inputSettingList[i].type;
+				textbox.style.top = inputSettingList[i].top + "%";
+				textbox.style.left = inputSettingList[i].left + "%";
+				textbox.style.width = inputSettingList[i].width + "%";
+				textbox.style.height = inputSettingList[i].height + "%";
+				const parent = document.getElementById("addTextBox");
+				parent.appendChild(textbox);
+			}
+		</script>
+	</body>
+
+</html>
