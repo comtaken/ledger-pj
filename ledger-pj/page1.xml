@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <InputList>
- <Input id="TXTBOX0001" type="text" top="32" left="32.5" width="21.2" height="3.2"></Input>
- <Input id="TXTBOX0002" type="text" top="41.1" left="24" width="23.5" height="0.8"></Input>
+ <Input id="TXTBOX0001" type="text" top="32" left="32.5" width="20.7" height="2.9"></Input>
+ <Input id="TXTBOX0002" type="text" top="41" left="23.8" width="23.2" height="0.6"></Input>
+ <Input id="TXTBOX0003" type="text" top="43.3" left="23.8" width="23.2" height="0.6"></Input>
+ <Input id="TXTBOX0004" type="text" top="45.6" left="23.8" width="23.2" height="0.6"></Input>
+ <Input id="TXTBOX0005" type="text" top="47.9" left="23.8" width="23.2" height="0.6"></Input>
+ <Input id="TXTBOX0006" type="text" top="50.2" left="23.8" width="23.2" height="0.6"></Input>
+ <Input id="TXTBOX0007" type="text" top="52.5" left="23.8" width="23.2" height="0.6"></Input>
+ <Input id="TXTBOX0008" type="text" top="54.8" left="23.8" width="23.2" height="0.6"></Input>
+ <Input id="TXTBOX0009" type="text" top="57.1" left="23.8" width="23.2" height="0.6"></Input>
+ <Input id="TXTBOX0010" type="text" top="59.4" left="23.8" width="23.2" height="0.6"></Input>
+ <Input id="TXTBOX0011" type="text" top="61.7" left="23.8" width="23.2" height="0.6"></Input>
+ <Input id="TXTBOX0012" type="text" top="64" left="23.8" width="23.2" height="0.6"></Input>
+ <Input id="TXTBOX0013" type="text" top="66.3" left="23.8" width="23.2" height="0.6"></Input>
+ <Input id="TXTBOX0014" type="text" top="68.6" left="23.8" width="23.2" height="0.6"></Input>
+ <Input id="TXTBOX0015" type="text" top="70.9" left="23.8" width="23.2" height="0.6"></Input>
 </InputList>
