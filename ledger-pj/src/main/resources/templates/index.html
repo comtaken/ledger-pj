@@ -45,10 +45,10 @@
 				const textbox = document.createElement("input");
 				textbox.id = inputSettingList[i].id;
 				textbox.type = inputSettingList[i].type;
-				textbox.style.top = inputSettingList[i].top + "%";
+				textbox.style.top = (inputSettingList[i].top * 0.998) + "%";
 				textbox.style.left = inputSettingList[i].left + "%";
-				textbox.style.width = inputSettingList[i].width + "%";
-				textbox.style.height = inputSettingList[i].height + "%";
+				textbox.style.width = (inputSettingList[i].width * 1.065) + "%";
+				textbox.style.height = (inputSettingList[i].height * 1.3) + "%";
 				textbox.placeholder=inputSettingList[i].id;
 				const parent = document.getElementById("addTextBox");
 				parent.appendChild(textbox);
