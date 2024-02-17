@@ -1,2 +1,2 @@
 ♦ FormImage  
-![image](https://github.com/comtaken/ledger-pj/assets/65578523/d3911416-82c1-48ed-b232-8d410df21ed6)
+![image](https://github.com/comtaken/ledger-pj/assets/65578523/2ab494ec-cf8c-4ff3-b1e0-6d7bc337630f)
