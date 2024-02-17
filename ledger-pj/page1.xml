@@ -15,6 +15,7 @@
  <Input id="TXTBOX0013" type="text" top="66.3" left="23.8" width="23.2" height="1.12"></Input>
  <Input id="TXTBOX0014" type="text" top="68.6" left="23.8" width="23.2" height="1.12"></Input>
  <Input id="TXTBOX0015" type="text" top="70.9" left="23.8" width="23.2" height="1.12"></Input>
- <Input id="TXTBOX0014" type="radio" top="73.2" left="23.8" width="1" height="1"></Input>
- <Input id="TXTBOX0015" type="checkbox" top="75.5" left="23.8" width="1" height="1"></Input>
+ <Input id="TXTBOX0016" type="radio" top="73.2" left="23.8" width="1" height="1"></Input>
+ <Input id="TXTBOX0017" type="checkbox" top="75.5" left="23.8" width="1" height="1"></Input>
+ <Input id="TXTAREA0018" type="textarea" top="77.5" left="23.8" width="23.2" height="3"></Input>
 </InputList>
