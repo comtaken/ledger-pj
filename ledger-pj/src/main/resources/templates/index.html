@@ -45,17 +45,26 @@ input::placeholder {
 	<div class="wrapper">
 		<div class="parent">
 			<img th:src="@{/gif/page1.gif}" alt="" />
-			<div class="addInput" id="addInput"></div>
+			<form th:action="@{/export}" th:object="${inputForm}" method="post">
+			<div class="addInput" id="addInput">
+				<input type="text" th:field="*{TXTBOX0001}"/>
+				<input type="text" th:field="*{TXTBOX0002}"/>
+				<input type="text" th:field="*{TXTBOX0003}"/>
+				<input type="text" th:field="*{TXTBOX0004}"/>
+				<input type="text" th:field="*{TXTBOX0005}"/>
+			</div>
+			<input type="submit" th:value="PDF出力" />
+			</form>
 		</div>
 	</div>
 	<script th:inline="javascript">
 		const inputSettingList = /*[[${inputSettingList}]]*/";"
-		console.log(inputSettingList[0].id);
+		//console.log(inputSettingList[0].id);
 
 		for (i = 0; i < inputSettingList.length; i++) {
-			const textbox = document.createElement("input");
-			textbox.id = inputSettingList[i].id;
-			textbox.type = inputSettingList[i].type;
+			inputId = "TXTBOX000" + (i+1);
+			console.log(inputId);
+			const textbox = document.getElementById(inputId);
 			textbox.style.top = inputSettingList[i].top + "%";
 			textbox.style.left = inputSettingList[i].left + "%";
 			textbox.style.width = inputSettingList[i].width + "%";
@@ -63,8 +72,8 @@ input::placeholder {
 			textbox.style.position = "absolute";
 			textbox.style.fontSize = "1em";
 			textbox.placeholder = inputSettingList[i].id;
-			const parent = document.getElementById("addInput");
-			parent.appendChild(textbox);
+			//const parent = document.getElementById("addInput");
+			//parent.appendChild(textbox);
 		}
 	</script>
 </body>

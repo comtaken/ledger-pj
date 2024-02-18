@@ -3,18 +3,24 @@ import java.io.FileInputStream;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathFactory;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
+
+import com.example.demo.Form.InputForm;
 import com.example.demo.Form.InputSetting;
 
 @Controller
@@ -42,6 +48,12 @@ public class LedgerController {
 			inputSettingList.add(inputSetting);
 		}
 		model.addAttribute("inputSettingList", inputSettingList);
+		model.addAttribute("inputForm",new InputForm());
 		return "index";
+	}
+	@PostMapping("/export")
+	public String exportForm(@ModelAttribute InputForm inputform ,Model model) {
+		System.out.println(111);
+		return "redirect:/";
 	}
 }
