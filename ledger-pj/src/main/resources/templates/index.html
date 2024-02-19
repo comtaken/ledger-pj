@@ -4,6 +4,8 @@
 <head>
 <title>top page</title>
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
 <title>フォーム</title>
 </head>
 <style>
@@ -46,34 +48,126 @@ input::placeholder {
 		<div class="parent">
 			<img th:src="@{/gif/page1.gif}" alt="" />
 			<form th:action="@{/export}" th:object="${inputForm}" method="post">
-			<div class="addInput" id="addInput">
-				<input type="text" th:field="*{TXTBOX0001}"/>
-				<input type="text" th:field="*{TXTBOX0002}"/>
-				<input type="text" th:field="*{TXTBOX0003}"/>
-				<input type="text" th:field="*{TXTBOX0004}"/>
-				<input type="text" th:field="*{TXTBOX0005}"/>
-			</div>
-			<input type="submit" th:value="PDF出力" />
+				<div class="addInput" id="addInput">
+					<input style="display: none" th:field="*{TXTBOX0001}" /> <input
+						style="display: none" th:field="*{TXTBOX0002}" /> <input
+						style="display: none" th:field="*{TXTBOX0003}" /> <input
+						style="display: none" th:field="*{TXTBOX0004}" /> <input
+						style="display: none" th:field="*{TXTBOX0005}" /> <input
+						style="display: none" th:field="*{TXTBOX0006}" /> <input
+						style="display: none" th:field="*{TXTBOX0007}" /> <input
+						style="display: none" th:field="*{TXTBOX0008}" /> <input
+						style="display: none" th:field="*{TXTBOX0009}" /> <input
+						style="display: none" th:field="*{TXTBOX0010}" /> <input
+						style="display: none" th:field="*{TXTBOX0011}" /> <input
+						style="display: none" th:field="*{TXTBOX0012}" /> <input
+						style="display: none" th:field="*{TXTBOX0013}" /> <input
+						style="display: none" th:field="*{TXTBOX0014}" /> <input
+						style="display: none" th:field="*{TXTBOX0015}" /> <input
+						style="display: none" th:field="*{TXTBOX0016}" /> <input
+						style="display: none" th:field="*{TXTBOX0017}" /> <input
+						style="display: none" th:field="*{TXTBOX0018}" /> <input
+						style="display: none" th:field="*{TXTBOX0019}" /> <input
+						style="display: none" th:field="*{TXTBOX0020}" /> <input
+						style="display: none" th:field="*{TXTBOX0021}" /> <input
+						style="display: none" th:field="*{TXTBOX0022}" /> <input
+						style="display: none" th:field="*{TXTBOX0023}" /> <input
+						style="display: none" th:field="*{TXTBOX0024}" /> <input
+						style="display: none" th:field="*{TXTBOX0025}" /> <input
+						style="display: none" th:field="*{TXTBOX0026}" /> <input
+						style="display: none" th:field="*{TXTBOX0027}" /> <input
+						style="display: none" th:field="*{TXTBOX0028}" /> <input
+						style="display: none" th:field="*{TXTBOX0029}" /> <input
+						style="display: none" th:field="*{TXTBOX0030}" /> <input
+						style="display: none" th:field="*{TXTBOX0031}" /> <input
+						style="display: none" th:field="*{TXTBOX0032}" /> <input
+						style="display: none" th:field="*{TXTBOX0033}" /> <input
+						style="display: none" th:field="*{TXTBOX0034}" /> <input
+						style="display: none" th:field="*{TXTBOX0035}" /> <input
+						style="display: none" th:field="*{TXTBOX0036}" /> <input
+						style="display: none" th:field="*{TXTBOX0037}" /> <input
+						style="display: none" th:field="*{TXTBOX0038}" /> <input
+						style="display: none" th:field="*{TXTBOX0039}" /> <input
+						style="display: none" th:field="*{TXTBOX0040}" /> <input
+						style="display: none" th:field="*{TXTBOX0041}" /> <input
+						style="display: none" th:field="*{TXTBOX0042}" /> <input
+						style="display: none" th:field="*{TXTBOX0043}" /> <input
+						style="display: none" th:field="*{TXTBOX0044}" /> <input
+						style="display: none" th:field="*{TXTBOX0045}" /> <input
+						style="display: none" th:field="*{TXTBOX0046}" /> <input
+						style="display: none" th:field="*{TXTBOX0047}" /> <input
+						style="display: none" th:field="*{TXTBOX0048}" /> <input
+						style="display: none" th:field="*{TXTBOX0049}" /> <input
+						style="display: none" th:field="*{TXTBOX0050}" /> <input
+						style="display: none" th:field="*{TXTBOX0051}" /> <input
+						style="display: none" th:field="*{TXTBOX0052}" /> <input
+						style="display: none" th:field="*{TXTBOX0053}" /> <input
+						style="display: none" th:field="*{TXTBOX0054}" /> <input
+						style="display: none" th:field="*{TXTBOX0055}" /> <input
+						style="display: none" th:field="*{TXTBOX0056}" /> <input
+						style="display: none" th:field="*{TXTBOX0057}" /> <input
+						style="display: none" th:field="*{TXTBOX0058}" /> <input
+						style="display: none" th:field="*{TXTBOX0059}" /> <input
+						style="display: none" th:field="*{TXTBOX0060}" /> <input
+						style="display: none" th:field="*{TXTBOX0061}" /> <input
+						style="display: none" th:field="*{TXTBOX0062}" /> <input
+						style="display: none" th:field="*{TXTBOX0063}" /> <input
+						style="display: none" th:field="*{TXTBOX0064}" /> <input
+						style="display: none" th:field="*{TXTBOX0065}" /> <input
+						style="display: none" th:field="*{TXTBOX0066}" /> <input
+						style="display: none" th:field="*{TXTBOX0067}" /> <input
+						style="display: none" th:field="*{TXTBOX0068}" /> <input
+						style="display: none" th:field="*{TXTBOX0069}" /> <input
+						style="display: none" th:field="*{TXTBOX0070}" /> <input
+						style="display: none" th:field="*{TXTBOX0071}" /> <input
+						style="display: none" th:field="*{TXTBOX0072}" /> <input
+						style="display: none" th:field="*{TXTBOX0073}" /> <input
+						style="display: none" th:field="*{TXTBOX0074}" /> <input
+						style="display: none" th:field="*{TXTBOX0075}" /> <input
+						style="display: none" th:field="*{TXTBOX0076}" /> <input
+						style="display: none" th:field="*{TXTBOX0077}" /> <input
+						style="display: none" th:field="*{TXTBOX0078}" /> <input
+						style="display: none" th:field="*{TXTBOX0079}" /> <input
+						style="display: none" th:field="*{TXTBOX0080}" /> <input
+						style="display: none" th:field="*{TXTBOX0081}" /> <input
+						style="display: none" th:field="*{TXTBOX0082}" /> <input
+						style="display: none" th:field="*{TXTBOX0083}" /> <input
+						style="display: none" th:field="*{TXTBOX0084}" /> <input
+						style="display: none" th:field="*{TXTBOX0085}" /> <input
+						style="display: none" th:field="*{TXTBOX0086}" /> <input
+						style="display: none" th:field="*{TXTBOX0087}" /> <input
+						style="display: none" th:field="*{TXTBOX0088}" /> <input
+						style="display: none" th:field="*{TXTBOX0089}" /> <input
+						style="display: none" th:field="*{TXTBOX0090}" /> <input
+						style="display: none" th:field="*{TXTBOX0091}" /> <input
+						style="display: none" th:field="*{TXTBOX0092}" /> <input
+						style="display: none" th:field="*{TXTBOX0093}" /> <input
+						style="display: none" th:field="*{TXTBOX0094}" /> <input
+						style="display: none" th:field="*{TXTBOX0095}" /> <input
+						style="display: none" th:field="*{TXTBOX0096}" /> <input
+						style="display: none" th:field="*{TXTBOX0097}" /> <input
+						style="display: none" th:field="*{TXTBOX0098}" /> <input
+						style="display: none" th:field="*{TXTBOX0099}" /> <input
+						style="display: none" th:field="*{TXTBOX0100}" />
+				</div>
+				<input type="submit" th:value="PDF出力" />
 			</form>
 		</div>
 	</div>
 	<script th:inline="javascript">
 		const inputSettingList = /*[[${inputSettingList}]]*/";"
-		//console.log(inputSettingList[0].id);
-
 		for (i = 0; i < inputSettingList.length; i++) {
-			inputId = "TXTBOX000" + (i+1);
-			console.log(inputId);
+			inputId = inputSettingList[i].id;
 			const textbox = document.getElementById(inputId);
+			textbox.type = inputSettingList[i].type;
 			textbox.style.top = inputSettingList[i].top + "%";
 			textbox.style.left = inputSettingList[i].left + "%";
 			textbox.style.width = inputSettingList[i].width + "%";
 			textbox.style.height = inputSettingList[i].height + "%";
 			textbox.style.position = "absolute";
 			textbox.style.fontSize = "1em";
+			textbox.style.display = "block";
 			textbox.placeholder = inputSettingList[i].id;
-			//const parent = document.getElementById("addInput");
-			//parent.appendChild(textbox);
 		}
 	</script>
 </body>
